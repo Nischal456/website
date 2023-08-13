@@ -44,3 +44,194 @@ hr {
   height: 2px;
   background-color: #fb774b;
 }
+button{
+  font-size: 0.8rem;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  background-color: #1d1d1d;
+  color: aliceblue;
+  padding: 13px 30px;
+  text-transform: uppercase;
+  transition: 0.4s ease;
+}
+button:hover {
+  background-color: #3a3833;
+}
+.navbar{
+  font-size: 16px;
+  top: 0;
+  left: 0;
+}
+
+.navbar-light .navbar-nav .nav-link{ 
+  padding: 0 20px;
+  color: black;
+  transition: 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar i.active {
+  color: coral;
+}
+
+.navbar i{
+   font-size: 1.2rem;
+   padding: 0 7px;
+   cursor:pointer;
+   font-weight: 500;
+   transition: 0.3s ease; 
+}
+
+/* Mobile Nav */
+.navbar-light .navbar-toggler{
+  border: none;
+  outline:none;
+}
+
+#bar{
+  font-size: 1.5rem;
+  padding: 7px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+  color: black;
+}
+
+#bar:hover,
+#bar.active {
+  color: #fff;
+}
+
+@media only screen and (max-width: 991px){
+  body > nav > div > button:hover,
+  body > nav > div > button:focus{
+      background-color: coral;
+  }
+
+  body > nav > div > button:hover #bar,
+  body > nav > div > button:focus #bar{
+      color: #fff;
+  }
+
+  #navbarSupportedContent > ul{
+    margin: 1rem;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+  }
+
+  #navbarSupportedContent > ul > li:nth-child(n) > a {
+      padding: 10px 0;
+  }
+
+}
+
+
+#home {
+ background-image: url("img/home.jpg");
+ width: 100%;
+ height: 50vh;
+background-size: cover;
+background-position: top center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+} 
+
+
+#home span {
+    color: coral;
+}
+
+#new span {
+  color: white;
+}
+
+#new .one img {
+  width: 90%;
+  height: 95%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#new .one .details {
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+#new .one:hover .details {
+  cursor: pointer;
+  background-color: rgba(245, 178, 178, 0.7);
+}
+
+#new .one:hover .details button { 
+   display:inline-block;
+   font-size: 14px;
+   font-weight: 500;
+   color: #2a2a2a;
+   background: none;
+   text-transform: uppercase;
+   border-bottom:  1px solid #2a2a2a;
+   padding: 2.5px;
+   transform: translateY(70px);
+   transition: 0.3s ease;
+}
+
+#new .one .details button:hover{
+  color:white;
+  border-bottom: 1px solid white;
+}
+
+#new .one:nth-child(1) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+}
+#new .one:nth-child(2) .details{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#new .one:nth-child(3) .details{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: end;
+}
+#new .one:nth-child(4) .details{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: start;
+}
+#new .one:nth-child(5) .details{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#new .one:nth-child(6) .details{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: end;
+}
